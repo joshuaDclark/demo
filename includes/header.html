@@ -1,0 +1,64 @@
+<section class="pt-12 pb-12 lg:py-20 bg-gray-900">
+  <div
+    class="flex flex-col items-center px-12 mx-auto lg:flex-row lg:space-x-12"
+  >
+    <div
+      class="relative z-20 flex flex-col items-start justify-center w-full h-full lg:w-5/12"
+    >
+      <!-- <p class="pb-5 text-sm font-medium tracking-wide text-green-500 uppercase">Ready for Launch</p> -->
+      <h1 class="text-6xl font-bold pb-7 text-white">
+        Websites for Service Businesses
+      </h1>
+      <p class="text-lg text-gray-200 pb-7">
+        Plumber, Electrician or Consultant? Your business depends on customers -
+        if they can't find you, you're leaving cash on the table. We fix this
+        for you - fast!
+      </p>
+      <div
+        class="flex flex-col items-center w-full sm:w-auto sm:flex-row sm:space-x-10"
+      >
+        <button
+          id="scrollButton"
+          class="flex flex-col items-center w-full sm:w-auto sm:flex-row sm:space-x-10"
+        >
+          <a
+            class="px-7 sm:w-auto justify-center w-full flex items-center overflow-hidden group relative py-3.5 text-xl font-medium text-white bg-blue-500 border border-white rounded-full"
+          >
+            <span
+              class="absolute inset-0 w-full h-0 transition-all duration-300 ease-out bg-green-400 group-hover:h-full"
+            ></span>
+            <span class="relative">Learn More</span>
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="relative z-10 w-full h-full my-16 lg:my-0 lg:w-7/12 hidden lg:block"
+    >
+      <div class="relative">
+        <!-- Background element -->
+        <!-- <div
+          class="absolute inset-0 bg-gradient-to-l from-blue-500 to-green-500 rounded-md -mt-4 -ml-4 -mr-4 mb-4 z-10"
+        ></div> -->
+
+        <!-- img -->
+        <div class="aspect-[16/9] rounded-md overflow-hidden relative z-20">
+          <img
+            class="w-full h-full object-cover bg-blend-overlay bg-green-300"
+            src="https://cdn.midjourney.com/8ac62981-9209-4733-980c-840c90816cd9/0_3.webp"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document
+    .getElementById("scrollButton")
+    .addEventListener("click", function () {
+      var svgElement = document.getElementById("how-it-works");
+      svgElement.scrollIntoView({ behavior: "smooth" });
+    });
+</script>
