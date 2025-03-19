@@ -1,0 +1,7 @@
+[build]
+  command = "static build $URL"
+  publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "18"
+  URL = "https://velvety-faloodeh-174a2e.netlify.app"
